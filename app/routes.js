@@ -5,13 +5,25 @@ const router = express.Router()
 
 module.exports = router
 
+// router.post('/juggling-balls-answer', function(request, response){
+//
+//   var jugglingBalls = request.session.data['juggling-balls']
+//
+//   if (jugglingBalls == "3 or more"){
+//     response.redirect('/juggling-trick')
+//   } else {
+//     response.redirect('/ineligible')
+//   }
+// })
+
 router.post('/juggling-balls-answer', function(request, response){
 
-var jugglingBalls = request.session.data['juggling-balls']
+  var jugglingBalls = request.session.data['juggling-balls']
 
-if (jugglingBalls == "3 or more"){
-  response.redirect ('/juggling-trick')
-} else {
-  response.redirect ('/ineligible')
+  if (jugglingBalls){
+    response.redirect('/juggling-trick')
+  } else {
+    response.render('juggling-balls', {error:true})
   }
+
 })
