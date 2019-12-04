@@ -1,0 +1,144 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Supplier account
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+{% endblock %}
+
+{% block content %}
+
+
+
+
+     <main class="govuk-main-wrapper " id="main-content" role="main">
+
+<div class="govuk-grid-row">
+ <div class="govuk-grid-column-full">
+
+   <h1 class="govuk-heading-xl govuk-!-margin-bottom-5">
+     Supplier dashboard
+   </h1>
+
+
+   <table class="govuk-table govuk-!-margin-top-9">
+     <caption class="govuk-table__caption govuk-!-margin-bottom-2 govuk-heading-m">Received offers</caption>
+     <thead class="govuk-table__head">
+       <tr class="govuk-table__row">
+         <th class="govuk-table__header" scope="col">Contract name</th>
+         <th class="govuk-table__header" scope="col">Buyer</th>
+         <th class="govuk-table__header" scope="col">Expires</th>
+          <th class="govuk-table__header" scope="col"></th>
+       </tr>
+     </thead>
+     <tbody class="govuk-table__body">
+       <tr class="govuk-table__row">
+         <td class="govuk-table__cell" scope="row"><a class="govuk-link govuk-link--no-visited-state" href="/supplier/respond">School facilities London</a></td>
+
+         <td class="govuk-table__cell" scope="row">Coal Authority</td>
+         <td class="govuk-table__cell" scope="row">7 July 2019, 9:02am</td>
+          <td class="govuk-table__cell" scope="row"><strong class="govuk-tag">Action required</strong></td>
+
+       </tr>
+
+
+     </tbody>
+   </table>
+
+   <table class="govuk-table govuk-!-margin-top-9">
+     <caption class="govuk-table__caption govuk-!-margin-bottom-2 govuk-heading-m">Accepted</caption>
+     <thead class="govuk-table__head">
+       <tr class="govuk-table__row">
+         <th class="govuk-table__header" scope="col">Contract name</th>
+         <th class="govuk-table__header" scope="col">Buyer</th>
+         <th class="govuk-table__header" scope="col">Accepted</th>
+       </tr>
+     </thead>
+     <tbody class="govuk-table__body">
+       <tr class="govuk-table__row">
+         <td class="govuk-table__cell" scope="row"><a class="govuk-link govuk-link--no-visited-state" href="#">Cabinet office FM servic</a></td>
+         <td class="govuk-table__cell" scope="row">Department for
+Digital, Culture,Media<br/>and Sport</td>
+         <td class="govuk-table__cell" scope="row">7 July 2019, 9:02am</td>
+       </tr>
+
+
+     </tbody>
+   </table>
+
+
+   <table class="govuk-table govuk-!-margin-top-9">
+     <caption class="govuk-table__caption govuk-!-margin-bottom-2 govuk-heading-m">Contracts</caption>
+     <thead class="govuk-table__head">
+       <tr class="govuk-table__row">
+         <th class="govuk-table__header" scope="col">Contract name</th>
+         <th class="govuk-table__header" scope="col">Buyer</th>
+         <th class="govuk-table__header" scope="col">Start date</th>
+          <th class="govuk-table__header" scope="col">End date</th>
+       </tr>
+     </thead>
+     <tbody class="govuk-table__body">
+       <tr class="govuk-table__row">
+         <td class="govuk-table__cell" scope="row"><a class="govuk-link govuk-link--no-visited-state" href="#">Cabinet office servic</a></td>
+         <td class="govuk-table__cell" scope="row">Fleet Air Arm Museum 2</td>
+         <td class="govuk-table__cell" scope="row">17 July 2019</td>
+         <td class="govuk-table__cell" scope="row">6 July 2019</td>
+       </tr>
+
+
+     </tbody>
+   </table>
+
+   <table class="govuk-table govuk-!-margin-top-9">
+     <caption class="govuk-table__caption govuk-!-margin-bottom-2 govuk-heading-m">Closed</caption>
+     <thead class="govuk-table__head">
+       <tr class="govuk-table__row">
+         <th class="govuk-table__header" scope="col">Contract name</th>
+         <th class="govuk-table__header" scope="col">Buyer</th>
+         <th class="govuk-table__header" scope="col">Date</th>
+         <th class="govuk-table__header" scope="col">Status</th>
+       </tr>
+     </thead>
+     <tbody class="govuk-table__body">
+       <tr class="govuk-table__row">
+         <td class="govuk-table__cell" scope="row"><a class="govuk-link govuk-link--no-visited-state" href="#">Cabinet office FM services</a></td>
+         <td class="govuk-table__cell" scope="row">Cabinet office</td>
+         <td class="govuk-table__cell" scope="row">7 July 2019, 9:02am</td>
+          <td class="govuk-table__cell" scope="row">Declined</td>
+       </tr>
+       <tr class="govuk-table__row">
+         <td class="govuk-table__cell" scope="row"><a class="govuk-link govuk-link--no-visited-state" href="#">Cabinet office FM services</a></td>
+         <td class="govuk-table__cell" scope="row">Cabinet office</td>
+         <td class="govuk-table__cell" scope="row">7 July 2019, 9:02am</td>
+         <td class="govuk-table__cell" scope="row">Not responded</td>
+       </tr>
+       <tr class="govuk-table__row">
+         <td class="govuk-table__cell" scope="row"><a class="govuk-link govuk-link--no-visited-state" href="#">Cabinet office FM services</a></td>
+         <td class="govuk-table__cell" scope="row">Cabinet office</td>
+         <td class="govuk-table__cell" scope="row">7 July 2019, 9:02am</td>
+         <td class="govuk-table__cell" scope="row">Not signed</td>
+       </tr>
+       <tr class="govuk-table__row">
+         <td class="govuk-table__cell" scope="row"><a class="govuk-link govuk-link--no-visited-state" href="#">FCabinet office FM services</a></td>
+         <td class="govuk-table__cell" scope="row">Cabinet office 123456789</td>
+         <td class="govuk-table__cell" scope="row">7 July 2019, 9:02am</td>
+         <td class="govuk-table__cell" scope="row">Withdrawn</td>
+       </tr>
+     </tbody>
+   </table>
+
+
+ </div>
+</div>
+{% endblock %}
