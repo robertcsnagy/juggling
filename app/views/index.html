@@ -10,78 +10,108 @@
 {% endblock %}
 
 {% block beforeContent %}
-  <div class="govuk-breadcrumbs">
-    <ol class="govuk-breadcrumbs__list">
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
-      </li>
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="#">Section</a>
-      </li>
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link">Subsection</a>
-      </li>
-    </ol>
-  </div>
+<div class="govuk-width-container">
+
+
+
+<div class="govuk-phase-banner">
+<p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
+beta
+</strong>
+<span class="govuk-phase-banner__text">
+   This is a new service - your <a class="govuk-link govuk-link--no-visited-state" href="#" class="govuk-link">feedback</a> will help us to improve it.
+ </span>
+</p>
+</div>
 {% endblock %}
 
 {% block content %}
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
+      <main class="govuk-main-wrapper " id="main-content" role="main">
 
-      <h1 class="govuk-heading-xl">
-        {% if serviceName %} {{ serviceName }} {% endif %}
-      </h1>
+     <div class="govuk-grid-row">
+         <div class="govuk-grid-column-full">
 
-      <p>Use this service to:</p>
+           <h1 class="govuk-heading-xl govuk-!-margin-bottom-5">
+             <span class="govuk-caption-l">Buyer account</span>
+             Jo Bloggs
+           </h1>
 
-      <ul class="govuk-list govuk-list--bullet">
-        <li>do something</li>
-        <li>update your name, address or other details</li>
-        <li>do something else</li>
-      </ul>
+           <div class="govuk-grid-row govuk-!-margin-top-7">
+             <div class="govuk-grid-column-full">
+               <h3 class="govuk-heading-m">Create a shortlist of suppliers</h3>
+               <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible govuk-!-margin-bottom-5">
 
-      <p>Registering takes around 5 minutes.</p>
+               <div class="govuk-grid-column-one-third css-index-link-block">
+                 <h4 class="govuk-heading-s"><a class="govuk-link govuk-link--no-visited-state" href="#">Find facilities management services</a></h4>
+                 <p>Create, save and manage your procurements</p>
+                 <br/>
+                 <p><button type="submit" class="govuk-button">Start a search for suppliers</button></p>
+               </div>
 
-      <a href="/juggling-balls.html" role="button" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8">Start now</a>
 
-      <h2 class="govuk-heading-m">Before you start</h2>
+             </div>
+           </div>
 
-      <p>You can also <a href="#">register by post</a>.</p>
+           <div class="govuk-grid-row govuk-!-margin-top-9 govuk-!-margin-bottom-7">
+             <div class="govuk-grid-column-full">
+               <h3 class="govuk-heading-m">Your services</h3>
+               <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible govuk-!-margin-bottom-5">
+               <div class="govuk-grid-column-one-third css-index-link-block">
+                 <h4 class="govuk-heading-s"><a class="govuk-link govuk-link--no-visited-state" href="/manage-eoi-index">Manage buildings</a></h4>
+                 <p>Create and amange your buildigns used in your procurements</p>
 
-      <p>The online service is also available in <a href="#">Welsh (Cymraeg)</a>.</p>
+               </div>
+             </div>
+           </div>
 
-      <p>You can’t register for this service if you’re in the UK illegally.</p>
+           <div class="govuk-grid-row govuk-!-margin-top-9 govuk-!-margin-bottom-7">
+             <div class="govuk-grid-column-full">
+               <h3 class="govuk-heading-m">Resources</h3>
+               <p><a class="govuk-link govuk-link--no-visited-state" href="https://design-system.service.gov.uk/components/">Design system</a><br/>
+               <a class="govuk-link govuk-link--no-visited-state" href="http://alphagov.github.io/digitalmarketplace-frontend-toolkit/">Digital Markeptplace components</a></p>
+             </div>
+           </div>
 
-    </div>
+         </div>
+       </div>
 
-    <div class="govuk-grid-column-one-third">
-
-      <aside class="app-related-items" role="complementary">
-        <h2 class="govuk-heading-m" id="subsection-title">
-          Subsection
-        </h2>
-        <nav role="navigation" aria-labelledby="subsection-title">
-          <ul class="govuk-list govuk-!-font-size-16">
-            <li>
-              <a href="http://localhost:3000/docs/tutorials-and-examples">
-                Example pages and documentation
-              </a>
-            </li>
-            <li>
-              <a href="https://design-system.service.gov.uk/">
-                Design system
-              </a>
-            </li>
-            <li>
-              <a href="/docs" class="govuk-!-font-weight-bold">
-                More <span class="govuk-visually-hidden">in Subsection</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </aside>
-
-    </div>
-  </div>
+             </main>
+           </div>
+           <fieldset class="govuk-fieldset">
+               <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                 <h1 class="govuk-fieldset__heading">
+                   Do you want to add a representative to the account now?
+                 </h1>
+               </legend>
+               <p>If you want to trade on the account you'll need to add another individual to the account</p>
+               <div class="govuk-radios--inline govuk-radios--conditional" data-module="radios">
+                 <div class="govuk-radios__item">
+                   <input class="govuk-radios__input" id="add-rep-1" name="createNewAccount.addRep" type="radio" value="yes" aria-controls="hidden-representative-email" aria-expanded="false" {{ checked("createNewAccount.addRep",'yes') }}>
+                   <label class="govuk-label govuk-radios__label" for="add-rep-1">
+                     Yes
+                   </label>
+                 </div>
+                 <div class="govuk-radios__item">
+                   <input class="govuk-radios__input" id="add-rep-2" name="createNewAccount.addRep" type="radio" value="no" {{ checked("createNewAccount.addRep",'no') }}>
+                   <label class="govuk-label govuk-radios__label" for="add-rep-2">
+                     No
+                   </label>
+                 </div>
+                 <div class="{% if (data.createNewAccount.addRep == "no") or ( not data.createNewAccount.addRep) %} govuk-radios__conditional--hidden {% endif %} govuk-!-padding-top-5" id="hidden-representative-email">
+                   <h2 class="govuk-heading-m">
+                     Invite a representative to the account
+                   </h2>
+                   {{ govukInput({
+                   id: "rep-email-address",
+                   name: "createNewAccount.repEmailAddress",
+                   classes: "govuk-input--width-20 format-number",
+                   label: {
+                       text: "Enter their email address"
+                   },
+                   value: data.createNewAccount.repEmailAddress
+                   }) }}
+                 </div>
+               </div>
+             </fieldset>
+           </div>
 {% endblock %}
