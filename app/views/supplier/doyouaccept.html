@@ -74,15 +74,33 @@
     </div>
 
 
-      <form action="/supplier/acceptconfirmation" method="post" novalidate>
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="more-detail">
+        Decline reasons
+      </label>
+      <span id="more-detail-hint" class="govuk-hint">
+        When you decline the offer, you need to tell us why. Write the reasons and confirm your response.
+      </span>
+      <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+    </div>
 
-        <input type="hidden" name="answers-checked" value="true">
+    <div class="govuk-warning-text">
+  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+  <strong class="govuk-warning-text__text">
+  <span class="govuk-warning-text__assistive">Warning</span>
+  We share your reasons with both the buyer and CCS. Decline reasons form part of an audit trail.
+  </strong>
+  </div>
 
-        <button type="submit" class="govuk-button">
-          Confirm and continue
-        </button>
 
-      </form>
+    <button class="govuk-button govuk-!-margin-right-1" data-module="govuk-button">
+  Confirm and continue
+</button>
+
+<button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+  Cancel
+</button>
+
 </main>
 <a href="/supplier/" class="govuk-link">Return to supplier dashboard</a>
     </div>
