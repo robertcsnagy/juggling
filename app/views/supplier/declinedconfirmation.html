@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+<!-- Adds a class to increase vertical spacing for pages without a back button -->
+{% set mainClasses = "govuk-main-wrapper--l" %}
+
+{% block pageTitle %}
+  Accepted confirmation
+{% endblock %}
+{% block beforeContent %}
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
+<a href="/supplier/doyouaccept" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <div class="govuk-panel govuk-panel--confirmation">
+        <h1 class="govuk-panel__title">You have declined this contract offer</h1>
+        <div class="govuk-panel__body">
+          Contract name: School facilities London<br/>
+          Contract number: RM330-DA2234-2019
+        </div>
+      </div>
+
+
+
+
+    <br/>
+<p class=govuk-body">For reference, this contract offer will be be viewable only in the closed section of your dashboard.</p>
+    
+
+          <div><form action="/supplier/" method="post" novalidate><input type="hidden" name="answers-checked" value="true">
+            <button type="submit" class="govuk-button--secondary">
+              Return to dashboard
+            </button>
+          </form>
+          <div>
+
+    </main>
+
+{% endblock %}

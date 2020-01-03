@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Supplier account
+  Check your answers
 {% endblock %}
 
 {% block beforeContent %}
@@ -28,7 +28,7 @@
  <div class="govuk-grid-column-full">
 
    <h1 class="govuk-heading-xl govuk-!-margin-bottom-5">
-Dashboard
+     Supplier dashboard
    </h1>
 
 
@@ -38,16 +38,15 @@ Dashboard
        <tr class="govuk-table__row">
          <th class="govuk-table__header" scope="col">Contract name</th>
          <th class="govuk-table__header" scope="col">Buyer</th>
-         <th class="govuk-table__header" scope="col">Date offer expires</th>
+         <th class="govuk-table__header" scope="col">Expires</th>
           <th class="govuk-table__header" scope="col"></th>
        </tr>
      </thead>
      <tbody class="govuk-table__body">
        <tr class="govuk-table__row">
-         <td class="govuk-table__cell" scope="row"><a class="govuk-link govuk-link--no-visited-state" href="/supplier/received">School facilities London</a></td>
-
+         <td class="govuk-table__cell" scope="row"><a class="govuk-link govuk-link--no-visited-state" href="/sent-eoi-awaiting-responses">Cabinet office FM servic</a></td>
          <td class="govuk-table__cell" scope="row">Coal Authority</td>
-         <td class="govuk-table__cell" scope="row">7 July 2019, 9:02am</td>
+         <td class="govuk-table__cell" scope="row">07 July 2019, 9:02am</td>
           <td class="govuk-table__cell" scope="row"><strong class="govuk-tag">Action required</strong></td>
 
        </tr>
@@ -67,10 +66,10 @@ Dashboard
      </thead>
      <tbody class="govuk-table__body">
        <tr class="govuk-table__row">
-         <td class="govuk-table__cell" scope="row"><a class="govuk-link govuk-link--no-visited-state" href="/supplier/accepted">Cabinet office FM servic</a></td>
+         <td class="govuk-table__cell" scope="row"><a class="govuk-link govuk-link--no-visited-state" href="/sent-eoi-awaiting-responses">Cabinet office FM servic</a></td>
          <td class="govuk-table__cell" scope="row">Department for
 Digital, Culture,Media<br/>and Sport</td>
-         <td class="govuk-table__cell" scope="row">7 July 2019, 9:02am</td>
+         <td class="govuk-table__cell" scope="row">07 July 2019, 9:02am</td>
        </tr>
 
 
@@ -90,10 +89,10 @@ Digital, Culture,Media<br/>and Sport</td>
      </thead>
      <tbody class="govuk-table__body">
        <tr class="govuk-table__row">
-         <td class="govuk-table__cell" scope="row"><a class="govuk-link govuk-link--no-visited-state" href="/supplier/livecontract">Cabinet office service3</a></td>
+         <td class="govuk-table__cell" scope="row"><a class="govuk-link govuk-link--no-visited-state" href="/sent-eoi-awaiting-responses">Cabinet office servic</a></td>
          <td class="govuk-table__cell" scope="row">Fleet Air Arm Museum 2</td>
          <td class="govuk-table__cell" scope="row">17 July 2019</td>
-         <td class="govuk-table__cell" scope="row">6 July 2029</td>
+         <td class="govuk-table__cell" scope="row">6 July 2019</td>
        </tr>
 
 
@@ -112,27 +111,27 @@ Digital, Culture,Media<br/>and Sport</td>
      </thead>
      <tbody class="govuk-table__body">
        <tr class="govuk-table__row">
-         <td class="govuk-table__cell" scope="row"><a class="govuk-link govuk-link--no-visited-state" href="/supplier/closed-declined">Cabinet office FM services</a></td>
+         <td class="govuk-table__cell" scope="row"><a class="govuk-link govuk-link--no-visited-state" href="/respond-dao">Cabinet office FM services</a></td>
          <td class="govuk-table__cell" scope="row">Cabinet office</td>
-         <td class="govuk-table__cell" scope="row">7 July 2019, 9:02am</td>
+         <td class="govuk-table__cell" scope="row">07 July 2019, 9:02am</td>
           <td class="govuk-table__cell" scope="row">Declined</td>
        </tr>
        <tr class="govuk-table__row">
-         <td class="govuk-table__cell" scope="row"><a class="govuk-link govuk-link--no-visited-state" href="/supplier/closed-notresponded">Cabinet office FM services</a></td>
+         <td class="govuk-table__cell" scope="row"><a class="govuk-link govuk-link--no-visited-state" href="#">Cabinet office FM services</a></td>
          <td class="govuk-table__cell" scope="row">Cabinet office</td>
-         <td class="govuk-table__cell" scope="row">7 July 2019, 9:02am</td>
+         <td class="govuk-table__cell" scope="row">07 July 2019, 9:02am</td>
          <td class="govuk-table__cell" scope="row">Not responded</td>
        </tr>
        <tr class="govuk-table__row">
-         <td class="govuk-table__cell" scope="row"><a class="govuk-link govuk-link--no-visited-state" href="/supplier/closed-notsigned">Cabinet office FM services</a></td>
+         <td class="govuk-table__cell" scope="row"><a class="govuk-link govuk-link--no-visited-state" href="#">Cabinet office FM services</a></td>
          <td class="govuk-table__cell" scope="row">Cabinet office</td>
-         <td class="govuk-table__cell" scope="row">7 July 2019, 9:02am</td>
+         <td class="govuk-table__cell" scope="row">07 July 2019, 9:02am</td>
          <td class="govuk-table__cell" scope="row">Not signed</td>
        </tr>
        <tr class="govuk-table__row">
-         <td class="govuk-table__cell" scope="row"><a class="govuk-link govuk-link--no-visited-state" href="/supplier/closed-withdrawn">FCabinet office FM services</a></td>
+         <td class="govuk-table__cell" scope="row"><a class="govuk-link govuk-link--no-visited-state" href="#">FCabinet office FM services</a></td>
          <td class="govuk-table__cell" scope="row">Cabinet office 123456789</td>
-         <td class="govuk-table__cell" scope="row">7 July 2019, 9:02am</td>
+         <td class="govuk-table__cell" scope="row">07 July 2019, 9:02am</td>
          <td class="govuk-table__cell" scope="row">Withdrawn</td>
        </tr>
      </tbody>

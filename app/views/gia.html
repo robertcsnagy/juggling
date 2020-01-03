@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/check-your-answers">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<form class="form" action="type" method="post">
+<div class="govuk-form-group">
+  <label class="govuk-label" for="more-detail">
+  What’s the internal area of the building?
+  </label>
+  <span id="gia" class="govuk-hint">
+    Gross internal area (GIA) is the area of a building measured to the internal face of the perimeter walls at each floor level. For example, 18,000 square metres.
+  </span>
+  <textarea class="govuk-textarea" id="more-detail" name="gia" rows="1" aria-describedby="more-detail-hint">{{data["gia"]}}</textarea>
+</div>
+
+<button class="govuk-button">Continue</button>
+
+</form>
+
+    </div>
+  </div>
+
+{% endblock %}

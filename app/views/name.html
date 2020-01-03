@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/check-your-answers">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<form class="form" action="/gia" method="post">
+<div class="govuk-form-group">
+  <label class="govuk-label" for="more-detail">
+    What’s the name of your building?
+  </label>
+  <span id="more-detail-hint" class="govuk-hint">
+    This will help you refer to your building or part of the building  when selecting services. For example, Newbury office 3rd floor.
+  </span>
+  <textarea class="govuk-textarea" id="more-detail" name="name" rows="1" aria-describedby="more-detail-hint">{{data["name"]}}</textarea>
+</div>
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="more-detail">
+    What’s the description?  - Optional
+  </label>
+  <span id="more-detail-hint" class="govuk-hint">
+    Enter additional information about this building that will help you to recognise them. For example, some users put their cost centre in this field.
+  </span>
+  <textarea class="govuk-textarea" id="more-detail" name="description" rows="1" aria-describedby="more-detail-hint">{{data["description"]}}</textarea>
+</div>
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="more-detail">
+    What's the address?
+  </label>
+  <span id="more-detail-hint" class="govuk-hint">
+    We’ll use this UK address to assess the region in which your building is located.
+  </span>
+  <textarea class="govuk-textarea" id="more-detail" name="address" rows="1" aria-describedby="more-detail-hint">{{data["address"]}}</textarea>
+</div>
+
+<button class="govuk-button">Continue</button>
+
+</form>
+
+    </div>
+  </div>
+
+{% endblock %}

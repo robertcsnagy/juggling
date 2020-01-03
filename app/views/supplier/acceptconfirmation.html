@@ -27,26 +27,65 @@
     <div class="govuk-grid-column-two-thirds">
 
       <div class="govuk-panel govuk-panel--confirmation">
-        <h1 class="govuk-panel__title">Offer accepted</h1>
+        <h1 class="govuk-panel__title">You have accepted this contract offer</h1>
         <div class="govuk-panel__body">
-          <br>The 'School facilities London'<br/> (FM-094-2019) contract <br/> has been accepted.
+          Contract name: School facilities London<br/>
+          Contract number: RM330-DA2234-2019
         </div>
       </div>
 
-      <p>
-        We have sent you a confirmation email.
-      </p>
+
+
+
+    <br/>
 
       <h2 class="govuk-heading-m">What happens next</h2>
-      <p>We've sent your application to Hackney Electoral Register Office.</p>
-      <p>They will contact you either to confirm your registration, or to ask for more information.</p>
-      <p><a href="https://www.gov.uk/service-manual/user-centred-design/resources/patterns/feedback-pages.html">What did you think of this service?</a> (takes 30 seconds)</p>
-      <p>
-        <a button type="submit" class="govuk-button" href="/supplier/index">Start again</a>
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            <p class="govuk-body govuk-!-font-weight-bold"><br/>
+              1. You sign the contract
+            <ul class="govuk-list govuk-list--bullet">
+            <li>you will sign the contract first, in the order form, and share with the buyer</li>
+            <li>this would usually take place within 5 working days</li>
+            </ul>
 
-      </p>
 
-    </div>
-  </div>
+            <p class="govuk-body govuk-!-font-weight-bold"><br/>
+              2. Buyer signs the contract
+            <ul class="govuk-list govuk-list--bullet">
+            <li>the buyer will then complete the effective date (on page 4 of the order form - this is the date the contract is fully signed), sign the contract, and share it back with you</li>
+            <li>this would usually take place within 2 working days</li>
+            </ul>
+
+
+            <p class="govuk-body govuk-!-font-weight-bold"><br/>
+              3. Signature confirmation
+            <ul class="govuk-list govuk-list--bullet">
+            <li>the buyer, in this online portal, will then confirm that both parties have signed the contract, which moves the offer into the contracts section on your dashboard, showing the start date and end date</li>
+            </ul>
+            </p>
+
+            <p class="govuk-body govuk-!-font-weight-bold"><br/>
+              4. Withdraw before signing
+            <ul class="govuk-list govuk-list--bullet">
+            <li>until the contract is fully signed, the buyer will have the option to withdraw this offer if circumstances require this action, however you will be immediately informed</li>
+            <li>if you have a change of circumstance and need to decline this contract offer after accepting it, please contact the buyer to discuss. They can then close down this contract offer to you, and will then have the option to move onto another supplier</li>
+            </ul>
+            </p>
+          </dt>
+
+        </div>
+    <br/>
+
+
+          <div><form action="/supplier/" method="post" novalidate><input type="hidden" name="answers-checked" value="true">
+            <button type="submit" class="govuk-button--secondary">
+              Return to dashboard
+            </button>
+          </form>
+          <div>
+
+    </main>
 
 {% endblock %}

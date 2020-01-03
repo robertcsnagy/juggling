@@ -41,7 +41,7 @@
           <div class="govuk-radios__item">
             <input class="govuk-radios__input" id="how-contacted-conditional" name="how-contacted" type="radio" value="email" data-aria-controls="conditional-how-contacted-conditional">
             <label class="govuk-label govuk-radios__label" for="how-contacted-conditional">
-              Yes, I accept
+              Yes
             </label>
           </div>
           <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional">
@@ -74,25 +74,27 @@
     </div>
 
 
-    <div class="govuk-form-group">
-      <label class="govuk-label" for="more-detail">
-        Decline reasons
-      </label>
-      <span id="more-detail-hint" class="govuk-hint">
-        When you decline the offer, you need to tell us why. Write the reasons and confirm your response.
+
+
+    <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="200">
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="with-hint">
+          No - answer
+        </label>
+        <span id="with-hint-hint" class="govuk-hint">
+          When you decline a contract offer you need to give a reason. Please input the reason into the box below. This information will be shared with the buyer and CCS.
+        </span>
+        <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="with-hint" rows="5" aria-describedby="with-hint-info with-hint-hint"></textarea>
+      </div>
+
+      <span id="with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+        500 characters remaining
       </span>
-      <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
     </div>
 
-    <div class="govuk-warning-text">
-  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-  <strong class="govuk-warning-text__text">
-  <span class="govuk-warning-text__assistive">Warning</span>
-  We share your reasons with both the buyer and CCS. Decline reasons form part of an audit trail.
-  </strong>
-  </div>
 
-
+    <form action="acceptconfirmation" method="post" novalidate>
+      <input type="hidden" name="answers-checked" value="true">
     <button class="govuk-button govuk-!-margin-right-1" data-module="govuk-button">
   Confirm and continue
 </button>
@@ -100,9 +102,10 @@
 <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
   Cancel
 </button>
+</form>
 
 </main>
-<a href="/supplier/" class="govuk-link">Return to supplier dashboard</a>
+<a href="/supplier/" class="govuk-link">Return to dashboard</a>
     </div>
   </div>
 

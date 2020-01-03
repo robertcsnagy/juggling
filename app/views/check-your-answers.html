@@ -12,54 +12,127 @@
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds-from-desktop">
 
-      <h1 class="govuk-heading-xl">Check your answers before sending your application</h1>
+      <h1 class="govuk-heading-xl">Create a single building</h1>
+      <h2 class="govuk-heading-m">Check and confirm details</h2>
 
 
 
       <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
-          Number of balls you can juggle
+          Reference
           </dt>
           <dd class="govuk-summary-list__value">
-            {{data["juggling-balls"]}}
+            00145
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a href="/juggling-balls">
+
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+          Name
+          </dt>
+          <dd class="govuk-summary-list__value">
+            {{data["name"]}}
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a href="/name">
               Change
-              <span class="govuk-visually-hidden"> number of balls you can juggle</span>
+              <span class="govuk-visually-hidden"> name</span>
             </a>
           </dd>
         </div>
+
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
-            Your most impressive juggling trick
+          Description
           </dt>
           <dd class="govuk-summary-list__value">
-            {{data["juggling-trick"]}}
+            {{data["description"]}}
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a href="/juggling-trick">
+            <a href="/name">
               Change
-              <span class="govuk-visually-hidden"> your most impressive juggling trick</span>
+              <span class="govuk-visually-hidden"> Description</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+          Address
+          </dt>
+          <dd class="govuk-summary-list__value">
+            {{data["address"]}}
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a href="/name">
+              Change
+              <span class="govuk-visually-hidden"> Address</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+          Gross internal area
+          </dt>
+          <dd class="govuk-summary-list__value">
+            {{data["gia"]}}
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a href="/gia">
+              Change
+              <span class="govuk-visually-hidden"> Gross internal area</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+          Building type
+          </dt>
+          <dd class="govuk-summary-list__value">
+            {{data["type"]}}
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a href="/type">
+              Change
+              <span class="govuk-visually-hidden"> Building type</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Security clearence
+          </dt>
+          <dd class="govuk-summary-list__value">
+            {{data["security"]}}
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a href="/security">
+              Change
+              <span class="govuk-visually-hidden"> security clearence</span>
             </a>
           </dd>
         </div>
 
       </dl>
 
+      <h2 class="govuk-heading-m">Save your building</h2>
 
-
-      <h2 class="govuk-heading-m">Now send your application</h2>
-
-      <p>By submitting this notification you are confirming that, to the best of your knowledge, the details you are providing are correct.</p>
+      <p>  You can save and return later to publish a building. You must answer all questions to save and use this building in a procurement.</p>
 
       <form action="/confirmation" method="post" novalidate>
 
         <input type="hidden" name="answers-checked" value="true">
 
         <button type="submit" class="govuk-button">
-          Accept and send
+          Save this building
         </button>
 
       </form>
