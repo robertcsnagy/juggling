@@ -16,14 +16,15 @@ module.exports = router
 //   }
 // })
 
-router.post('/juggling-balls-answer', function(request, response){
+router.post('/doyouaccept', function(request, response){
 
-  var jugglingBalls = request.session.data['juggling-balls']
+debugger;
+  var radiobutton = document.querySelector('input[type="radio"]:checked').value;
 
-  if (jugglingBalls){
-    response.redirect('/juggling-trick')
+  if (radiobutton=="answer-yes"){
+    response.redirect('/acceptconfirmation')
   } else {
-    response.render('juggling-balls', {error:true})
+    response.redirect('/declinedconfirmation')
   }
 
 })
