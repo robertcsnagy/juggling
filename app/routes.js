@@ -18,13 +18,12 @@ module.exports = router
 
 router.post('/doyouaccept', function(request, response){
 
-debugger;
-  var radiobutton = document.querySelector('input[type="radio"]:checked').value;
+  var radiobutton = request.session.data['how-contacted'];
 
-  if (radiobutton=="answer-yes"){
-    response.redirect('/acceptconfirmation')
+  if (radiobutton == "answer-yes"){
+    response.redirect('/supplier/acceptconfirmation');
   } else {
-    response.redirect('/declinedconfirmation')
+    response.redirect('/supplier/declinedconfirmation');
   }
 
 })

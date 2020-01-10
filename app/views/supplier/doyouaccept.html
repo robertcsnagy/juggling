@@ -26,79 +26,58 @@
 <span class="govuk-heading-s">Contract number: <span class="govuk-body">RM330-DA2234-2019</span></h4>
 <form action="/doyouaccept" method="post" novalidate="">
 
-<div class="govuk-form-group">
+  <div class="govuk-form-group">
     <h3 class="govuk-heading-m">Do you accept the contract offer from Coal Authority?</h3>
 
-  <span id="how-contacted-conditional-hint" class="govuk-hint">
-    Select one option.
-  </span>
-  <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
-        <div class="govuk-radios__item">
-          <input class="govuk-radios__input" id="how-contacted-conditional-2" name="how-contacted" type="radio" value="answer-yes" aria-controls="conditional-how-contacted-conditional-2" aria-expanded="false">
-          <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
-        Yes
-      </label>
-        </div>
-
-        <div class="govuk-radios__item">
-          <input class="govuk-radios__input" id="how-contacted-conditional-3" name="how-contacted" type="radio" value="text" aria-controls="conditional-how-contacted-conditional-3" aria-expanded="true">
-          <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-3">
-        No
-      </label>
-        </div>
-          <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-3">
-            <div class="govuk-form-group">
-  <label class="govuk-label" for="contact-by-text">
-    <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="200">
-      <div class="govuk-form-group">
-
-        <span id="with-hint-hint" class="govuk-hint">
-          When you decline a contract offer you need to give a reason. Please input the reason into the box below. This information will be shared with the buyer and CCS.
-        </span>
-        <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="with-hint" rows="5" aria-describedby="with-hint-info with-hint-hint"></textarea>
+    <span id="how-contacted-conditional-hint" class="govuk-hint">
+      Select one option.
+    </span>
+    <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="how-contacted-conditional-2" name="how-contacted" type="radio" value="answer-yes" aria-controls="conditional-how-contacted-conditional-2" aria-expanded="false">
+        <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+          Yes
+        </label>
       </div>
 
-      <span id="with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
-        500 characters remaining
-      </span>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="how-contacted-conditional-3" name="how-contacted" type="radio" value="text" aria-controls="conditional-how-contacted-conditional-3" aria-expanded="true">
+        <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-3">
+          No
+        </label>
+      </div>
+      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-3">
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="contact-by-text">
+            <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="200">
+              <div class="govuk-form-group">
+
+                <span id="with-hint-hint" class="govuk-hint">
+                  When you decline a contract offer you need to give a reason. Please input the reason into the box below. This information will be shared with the buyer and CCS.
+                </span>
+                <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="with-hint" rows="5" aria-describedby="with-hint-info with-hint-hint"></textarea>
+              </div>
+
+              <span id="with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+                500 characters remaining
+              </span>
+            </div>
+          </label>
+        </div>
+      </div>
     </div>
-  </label>
-
-</div>
-
-
-          </div>
   </div>
 
-</div>
+  <button class="govuk-button govuk-!-margin-right-1" data-module="govuk-button">
+  Confirm and continue
+  </button>
 
-<input type="submit" name="answers-checked" value="true">
-<button class="govuk-button govuk-!-margin-right-1" data-module="govuk-button">
-Confirm and continue
-</button>
-
-
-    <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
-      Cancel
-    </button>
-  </form>
-
-
-
-
-
-
-
-
-
+  <a  href='/supplier' class="govuk-button govuk-button--secondary" data-module="govuk-button">
+    Cancel
+  </a>
+</form>
 
 
   <a href="/supplier/" class="govuk-link">Return to dashboard</a>
-
-
-
-</main>
-    </div>
-  </div>
 
 {% endblock %}
